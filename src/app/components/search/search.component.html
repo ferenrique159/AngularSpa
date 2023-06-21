@@ -1,0 +1,19 @@
+<h1> Buscando: <small> {{ buscando }} </small> </h1>
+<hr>
+<div class="row">
+  <div class="col-sm-4 mb-3 mb-sm-0" *ngFor="let superH of HeroeBuscar; let i = index" >
+    <app-heroes-tarjeta  [superH]="superH" [i]="superH.idx" ></app-heroes-tarjeta>
+  </div>
+</div>
+
+
+<div *ngIf="HeroeBuscar.length === 0" >
+  <div class="p-5 mb-4 bg-light rounded-3 animate__animated animate__backInDown">
+    <div class="container-fluid py-5">
+      <h1 class="display-5 fw-bold">No hay ningun resultado con su busqueda</h1>
+      <p class="col-md-8 fs-4">Le recomendamos realizar otra busqueda, como por ejemplo 'Batman'</p>
+    </div>
+  </div>
+</div>
+
+

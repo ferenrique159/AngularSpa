@@ -1,0 +1,15 @@
+<h1>Heroe {{HeroeIndv.nombre | uppercase }} <img *ngIf="HeroeIndv.casa === 'Marvel'" class="img-thumbnail" style="max-width: 10%;" src="assets/img/Marvel.jpeg" alt=""> <img *ngIf="HeroeIndv.casa !== 'Marvel'" class="img-thumbnail" style="max-width: 20%;" src="assets/img/DC.jpg" alt="">  </h1>
+<hr>
+<div class="container ">
+  <div class="row">
+    <div class="col-8">
+      <img src="{{HeroeIndv.img }}" class="img-fluid animate__animated animate__backInDown" alt="...">
+    </div>
+    <div class="col-4">
+      <h5 class="mt-5 text-center "  > {{ HeroeIndv.bio }} </h5>
+      <hr>
+      <p> {{ HeroeIndv.aparicion }} </p>
+      <button class="btn btn-outline-danger" routerLink="/heroes" > REGRESAR </button>
+    </div>
+  </div>
+</div>

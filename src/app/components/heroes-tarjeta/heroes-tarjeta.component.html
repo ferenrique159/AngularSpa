@@ -1,0 +1,13 @@
+<div class="card">
+  <img src=" {{ superH.img }} " class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{ superH.nombre }}</h5>
+    <p class="card-text">{{ superH.bio }}.</p>
+    <p class="card-text"><small class="text-body-secondary"> {{ superH.aparicion }} </small></p>
+  </div>
+  <!-- Modo navengando a traves del router en TS -->
+  <button (click)="irRuta()" class="btn btn-outline-primary m-3 " > Ver Más... </button>
+  <!-- Modo Sencillo y rapido  -->
+  <!-- <button [routerLink]="['/heroes', i]"   class="btn btn-outline-primary m-3 " > Ver Más... </button> -->
+</div>
+

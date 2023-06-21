@@ -1,0 +1,1 @@
+para crear un componente sin el spec.ts es --skipTests
